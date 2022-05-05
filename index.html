@@ -244,22 +244,22 @@
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -282,22 +282,22 @@
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-contact-item">
-                    <a href="" class="team-contact-link"
-                      ><svg class="team-contact-icon" width="20" height="20">
+                    <a href="" class="team-contact-link">
+                      <svg class="team-contact-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -420,6 +420,24 @@
               </li>
             </ul>
           </li>
+          <li class="footer-list subscription">
+            <form class="subscription-form">
+              <h3>Подпишитесь на рассылку</h3>
+              <input
+                class="subscription-input"
+                type="email"
+                id="sub-mail"
+                name="subscr-email"
+                placeholder="E-mail"
+              />
+              <button type="submit">
+                Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                  <use class="subscription-svg" href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </li>
         </ul>
       </div>
     </footer>
@@ -430,6 +448,94 @@
         <svg class="button-close-icon" width="30" height="30" data-modal-close>
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
+        <form class="form" name="recall" autocomplete="on">
+          <!-- title -->
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <!-- test -->
+          <!-- <span>
+            <svg>
+              <use href="./images/check.svg"></use>
+            </svg>
+          </span> -->
+
+          <!-- name -->
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="contact-name" id="name" />
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </div>
+
+          <!-- tel -->
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" id="tel" name="contact-phone" required />
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </div>
+
+          <!-- email -->
+          <div class="form-field">
+            <label class="form-label" for="mail">Почта</label>
+            <input class="form-input" type="email" id="mail" name="contact-email" />
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-modal"></use>
+              </svg>
+            </span>
+          </div>
+
+          <!-- comment -->
+          <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea
+              class="form-input form-textarea"
+              name="contact-comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+            <!-- resize: none;  -->
+          </div>
+
+          <!-- terms -->
+          <div class="form-field">
+            <label class="form-terms-label">
+              <input
+                class="form-checkbox visually-hidden"
+                type="checkbox"
+                name="terms"
+                value="agree"
+                required
+              />
+              <span class="form-terms-thumb">
+                <svg class="form-terms-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                  -->
+                  <!-- <use class="use" href="./images/check.svg"></use> -->
+                </svg>
+              </span>
+              <!-- <span>
+                <svg>
+                  <use href="./images/check.svg"></use>
+                </svg>
+              </span> -->
+              <span class="form-terms-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="form-terms-link" href="">Условия договора</a>
+              </span>
+            </label>
+          </div>
+
+          <!-- send -->
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
