@@ -234,7 +234,7 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer-list list">
-          <li class="footer-item">
+          <li>
             <a href="./index.html" class="logo dark" lang="en"
               ><span class="logo-part">Web</span>Studio</a
             >
@@ -244,7 +244,8 @@
                   <a
                     href="https://www.google.com.ua/maps/@50.4265841,30.5361971,17z"
                     class="address-map"
-                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
                 <li class="address-item">
@@ -256,31 +257,32 @@
               </ul>
             </address>
           </li>
-          <li class="footer-item join">
+
+          <li class="join">
             <h3 class="join-title">присоединяйтесь</h3>
             <ul class="join-contact-list list">
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link">
                   <svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -288,6 +290,29 @@
                 </a>
               </li>
             </ul>
+          </li>
+
+          <li class="subscription">
+            <form>
+              <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+              <input
+                class="subscription-input"
+                type="email"
+                id="sub-mail"
+                name="subscr-email"
+                placeholder="E-mail"
+              />
+              <button class="subscription-btn" type="submit">
+                <span class="subscription-box">
+                  Подписаться
+                  <span class="subscription-thumb">
+                    <svg class="subscription-icon" width="24" height="24">
+                      <use class="subscription-svg" href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </form>
           </li>
         </ul>
       </div>

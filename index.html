@@ -365,7 +365,7 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer-list list">
-          <li class="footer-item">
+          <li>
             <a href="./index.html" class="logo dark" lang="en"
               ><span class="logo-part">Web</span>Studio</a
             >
@@ -375,7 +375,8 @@
                   <a
                     href="https://www.google.com.ua/maps/@50.4265841,30.5361971,17z"
                     class="address-map"
-                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
                 <li class="address-item">
@@ -387,31 +388,32 @@
               </ul>
             </address>
           </li>
-          <li class="footer-item join">
+
+          <li class="join">
             <h3 class="join-title">присоединяйтесь</h3>
             <ul class="join-contact-list list">
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link">
                   <svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="join-contact-item">
                 <a href="" class="join-contact-link"
                   ><svg class="join-contact-icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -420,9 +422,10 @@
               </li>
             </ul>
           </li>
-          <li class="footer-list subscription">
-            <form class="subscription-form">
-              <h3>Подпишитесь на рассылку</h3>
+
+          <li class="subscription">
+            <form>
+              <h3 class="subscription-title">Подпишитесь на рассылку</h3>
               <input
                 class="subscription-input"
                 type="email"
@@ -430,11 +433,15 @@
                 name="subscr-email"
                 placeholder="E-mail"
               />
-              <button type="submit">
-                Подписаться
-                <svg class="subscription-icon" width="24" height="24">
-                  <use class="subscription-svg" href="./images/icons.svg#icon-send"></use>
-                </svg>
+              <button class="subscription-btn" type="submit">
+                <span class="subscription-box">
+                  Подписаться
+                  <span class="subscription-thumb">
+                    <svg class="subscription-icon" width="24" height="24">
+                      <use class="subscription-svg" href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </span>
+                </span>
               </button>
             </form>
           </li>
@@ -449,17 +456,8 @@
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
         <form class="form" name="recall" autocomplete="on">
-          <!-- title -->
           <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <!-- test -->
-          <!-- <span>
-            <svg>
-              <use href="./images/check.svg"></use>
-            </svg>
-          </span> -->
-
-          <!-- name -->
           <div class="form-field">
             <label class="form-label" for="name">Имя</label>
             <input class="form-input" type="text" name="contact-name" id="name" />
@@ -470,7 +468,6 @@
             </span>
           </div>
 
-          <!-- tel -->
           <div class="form-field">
             <label class="form-label" for="tel">Телефон</label>
             <input class="form-input" type="tel" id="tel" name="contact-phone" required />
@@ -481,7 +478,6 @@
             </span>
           </div>
 
-          <!-- email -->
           <div class="form-field">
             <label class="form-label" for="mail">Почта</label>
             <input class="form-input" type="email" id="mail" name="contact-email" />
@@ -492,7 +488,6 @@
             </span>
           </div>
 
-          <!-- comment -->
           <div class="form-field">
             <label class="form-label" for="comment">Комментарий</label>
             <textarea
@@ -501,31 +496,23 @@
               id="comment"
               placeholder="Введите текст"
             ></textarea>
-            <!-- resize: none;  -->
           </div>
 
-          <!-- terms -->
-          <div class="form-field">
+          <div class="form-field form-field-terms">
             <label class="form-terms-label">
-              <input
-                class="form-checkbox visually-hidden"
-                type="checkbox"
-                name="terms"
-                value="agree"
-                required
-              />
               <span class="form-terms-thumb">
+                <input
+                  class="form-checkbox visually-hidden"
+                  type="checkbox"
+                  name="terms-agree"
+                  value="agree"
+                  required
+                />
                 <svg class="form-terms-icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
-                  -->
-                  <!-- <use class="use" href="./images/check.svg"></use> -->
                 </svg>
               </span>
-              <!-- <span>
-                <svg>
-                  <use href="./images/check.svg"></use>
-                </svg>
-              </span> -->
+
               <span class="form-terms-text">
                 Соглашаюсь с рассылкой и принимаю
                 <a class="form-terms-link" href="">Условия договора</a>
@@ -534,7 +521,7 @@
           </div>
 
           <!-- send -->
-          <button type="submit">Отправить</button>
+          <button class="form-btn-submit" type="submit" data-modal-close>Отправить</button>
         </form>
       </div>
     </div>
